@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  key-value-cache:
+    build: .
+    ports:
+      - "7171:7171"
+    environment:
+      - SERVER_PORT=7171
