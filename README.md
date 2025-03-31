@@ -64,9 +64,11 @@ pip install locust
 ```
 2. Run Locust:
 ```sh
-locust -f locustfile.py --host=http://localhost:7171
+locust -f locustfile.py --host=http://127.0.0.1:7171
 ```
 3. Open http://localhost:8089 in your browser and start the test.
+4. For post request : **http://127.0.0.1:7171/put**
+5. For get request : **http://127.0.0.1:7171/get?key={key}**
 
 ### Best Practices and Optimizations
 * **Containerization**: Uses a minimal openjdk:21-jdk-slim base image.
